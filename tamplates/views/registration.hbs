@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration</title>
+    l
+</head>
+<body>
+    {{>navbar}}
+    <h1>Limited offer: Get MAKEIT fitness gym membership only in $60(dolor)</h1>
+    
+    <section id="form-section">
+        <form action="/registration" method="POST" id="forms">
+            <span class="form-span">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" class="inputs" placeholder="Enter Your Name">
+        </span>
+        
+            <span class="form-span">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" class="inputs" placeholder="Enter Your age">
+        </span>
+
+        <span class="form-span">
+            <label for="Gender">Gender:</label>
+            <select name="gender" id="gender" class="inputs" >
+                <option value="Select Gender" selected>Select Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Trans-Gender">Trans-Gender</option>
+            </select>
+        </span>
+        <span>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" >
+        </span>
+        <span>
+            <label for="password">Password</label>
+           <input type="password" name="password" id="password">
+        </span>
+        <span>
+            <label for="cpassword">confirmPassword</label>
+           <input type="password" name="cpassword" id="cpassword">
+        </span>
+        <span class="form-span">
+            <label for="address">address:</label>
+            <Textarea  name="address" id="address" class="inputs" placeholder="Give Your Local address"></Textarea>
+        </span>
+        
+        <div id="sub-res"></div>
+        <input class="btn" type="reset" id="res-btn" class="inputs" name="reset" value="reset" >
+         <input class="btn" type="submit" id="sub-btn" class="inputs" name="submit" value="submit">
+        </form>
+    </section>
+</body>
+</html>
